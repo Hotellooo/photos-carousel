@@ -45,3 +45,5 @@ TODO:
 - fill out trips for generatePhotoInfo based on actual trips user creates w/ UI
 - refactor user contributions in generateUserInfo to count actual # of contributions per user?
 - refactor Carousel & PhotoMenu into class components, move props/methods unique to those from App.jsx -> can't b/c methods use setState
+
+- use S3, not unsplash -> it’s not about page load speed, it’s about viewing the hyperlinks since coming to a website and seeing the links going elsewhere makes it weird (ask Emily or Eric D. if need clarification)

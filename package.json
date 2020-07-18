@@ -10,10 +10,10 @@
   "scripts": {
     "seed": "node database/seedData.js",
     "nodemon": "nodemon server/app.js",
-    "webpack": "webpack -d --watch",
+    "webpack": "webpack -p -d --watch",
     "start": "node server/app.js",
-    "build": "webpack --mode production",
-    "test": "jest",
+    "prod": "webpack --mode production",
+    "test": "jest --coverage",
     "eject": "react-scripts eject"
   },
   "jest": {
@@ -29,7 +29,6 @@
     "express": "^4.17.1",
     "moment": "^2.27.0",
     "mongoose": "^5.9.19",
-    "node": "^14.4.0",
     "nodemon": "^2.0.4",
     "prop-types": "^15.7.2",
     "react": "^16.13.1",

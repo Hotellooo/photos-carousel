@@ -31,7 +31,6 @@ class App extends Component {
       .then(res => {
         res.data.photos.forEach((photo, idx) => photo.idx = idx); // assign each photo an idx
         this.setState({ hotel: res.data });
-        // console.log('HOTEL:', this.state.hotel);
       })
       .then( () => this.setState({ albums: this.getAlbums() }) );
   }
